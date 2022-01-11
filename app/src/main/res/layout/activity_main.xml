@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Glavnoe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fwalls0"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/part"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/menu2"
+       >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_menu_book_24"
+        android:layout_marginVertical="10dp"
+        />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Naduris feyiller"
+           android:fontFamily="@font/font_two"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:textSize="32sp"
+           android:layout_gravity="center"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Qaraqalpaq-English"
+           android:fontFamily="@font/font_two"
+           android:textSize="20sp"
+           android:textColor="@color/black"
+           android:layout_gravity="center"
+           />
+
+   </LinearLayout><!--menu=1-->
+
+    <LinearLayout
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/part"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu1"
+        app:layout_constraintBottom_toTopOf="@id/menu3"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_view_quilt_24"
+            android:layout_marginVertical="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naduris Feyiller"
+            android:fontFamily="@font/font_two"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini oyin"
+            android:fontFamily="@font/font_two"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout><!--menu=2-->
+
+    <LinearLayout
+        android:id="@+id/menu3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/part"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_language_24"
+            android:layout_marginVertical="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feyiller formasi"
+            android:fontFamily="@font/font_two"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practika"
+            android:fontFamily="@font/font_two"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout><!--menu=3-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
